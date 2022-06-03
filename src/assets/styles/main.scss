@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply transition ease-in-out delay-150 hover:bg-neutral-50 p-2 hover:text-zinc-700;
+  }
+
+  .form-input {
+    @apply bg-transparent border-slate-50 border rounded-md p-2 focus:bg-orange-800/[.09];
+  }
+
+  .red-divider {
+    @apply border-t border-orange-800 my-12;
+  }
+
+  .main-bg {
+    @apply bg-zinc-900;
+  }
+}
+
 /**
  * Use this file to import partials.
  * Do not include SCSS code in this file.
@@ -28,3 +52,4 @@
 /**
  * Do NOT include anything else in this file!
  */
+
